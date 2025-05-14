@@ -12,6 +12,11 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Segoe UI', sans-serif;
     background-color: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.text};
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
   }
 
   a {
