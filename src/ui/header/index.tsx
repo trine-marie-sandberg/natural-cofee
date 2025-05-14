@@ -28,12 +28,13 @@ background-color: #ffffff;
 
 const Lower = styled.div`
   background-color: #a7897d;
+  background-color: #140B0E;
   max-height: 30px;
   padding: 1px;
 `;
 const LowerText = styled.div`
   padding: 3px;
-  margin-left: 15%;
+  margin-left: 50%;
   color: white;
   & p {
     padding: 0;
@@ -42,6 +43,9 @@ const LowerText = styled.div`
   }
 `;
 const Logo = styled.p`
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
   font-size: 25px;
 `;
 const LogoNavWrap = styled.div`

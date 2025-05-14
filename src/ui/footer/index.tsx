@@ -2,8 +2,6 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.footer`
-  background: ${({ theme }) => theme.colors.accent};
-  color: white;
   text-align: center;
   padding: 1rem;
   width: 100%;

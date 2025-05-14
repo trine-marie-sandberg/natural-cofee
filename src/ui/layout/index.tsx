@@ -16,8 +16,8 @@ const Container = styled.div`
 
 const Main = styled.main`
   flex: 1;
-  padding: 1rem;
   background-color: rgb(31, 13, 6);
+  background-color: #140B0E;
 `;
 
 const Layout = ({ children }: Props) => {
