@@ -1,6 +1,6 @@
 // src/components/Header.tsx
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Wrapper = styled.header`
 background-color: #ffffff;
@@ -21,15 +21,25 @@ background-color: #ffffff;
 
     /* Triangle pointing down-right */
     border-left: 0 solid transparent;
-    border-right: 150px solid transparent;
-    border-top: 35px solid white;
+    border-right: 200px solid transparent;
+    border-top: 30px solid white;
   }
 `;
 
 const Lower = styled.div`
   background-color: #a7897d;
-
-  padding: 2rem 1rem 3rem 1rem;
+  max-height: 30px;
+  padding: 1px;
+`;
+const LowerText = styled.div`
+  padding: 3px;
+  margin-left: 15%;
+  color: white;
+  & p {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+  }
 `;
 const Logo = styled.p`
   font-size: 25px;
@@ -40,9 +50,15 @@ const LogoNavWrap = styled.div`
 `;
 const NavList = styled.ul`
   display: flex;
-  list-style: none;
+  list-style: georgian;
+  list-style: armenian;
+  list-style-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='5,0 10,5 5,10 0,5' fill='%23a0522d'/%3E%3C/svg%3E");
   & li {
     padding: 5px;
+    margin-left: 50px;
+    & a.active {
+      border-bottom: 1px solid black;
+    }
   }
 `;
 
@@ -56,16 +72,20 @@ const Header = () =>
         <nav>
           <NavList>
             <li>
-              <Link to="/" >Home</Link>
+              <NavLink to="/" >Home</NavLink>
             </li>
             <li>
-              <Link to="/menu">Menu</Link>
+              <NavLink to="/menu">Menu</NavLink>
             </li>
           </NavList>
         </nav>
       </LogoNavWrap>
   </Wrapper>
-  <Lower>kkk</Lower>
+  <Lower>
+    <LowerText>
+      <p>Loren ipsumstreat 21, 1212 Dolor</p>
+    </LowerText>
+  </Lower>
 </div>;
 
 export default Header;
