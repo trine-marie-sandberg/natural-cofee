@@ -22,7 +22,7 @@ const Header = () =>
   </Wrapper>
   <Lower>
     <LowerText>
-      <p>Loren ipsumstreat 21, 1212 Dolor</p>
+      <p><i className="fa-solid fa-location-dot"></i> Loren ipsumstreat 21, 1212 Dolor</p>
     </LowerText>
   </Lower>
 </div>;

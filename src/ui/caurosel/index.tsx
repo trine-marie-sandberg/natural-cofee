@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { CarouselWrapper, Track, Slide, Dots, Dot } from './style';
+import { CarouselWrapper, Track, Slide, Dots, Dot, FlexWrap, Arrow } from './style';
 
 const images = ['/carousel1.jpg', '/carousel2.jpg', '/carousel3.jpg'];
 
@@ -15,20 +15,24 @@ const Carousel = () => {
   }, [total]);
 
   return (
-    <CarouselWrapper>
-      <Track currentIndex={index}>
-        {images.map((src, i) => (
-          <Slide key={i} isActive={i === index}>
-            <img src={src} alt={`Carousel ${i + 1}`} />
-          </Slide>
-        ))}
-      </Track>
-      <Dots>
-        {images.map((_, i) => (
-          <Dot key={i} onClick={() => setIndex(i)} active={i === index} />
-        ))}
-      </Dots>
-    </CarouselWrapper>
+    <FlexWrap>
+      <Arrow className="fa-solid fa-arrow-left"></Arrow>
+        <CarouselWrapper>
+          <Track currentIndex={index}>
+            {images.map((src, i) => (
+              <Slide key={i} isActive={i === index}>
+                <img src={src} alt={`Carousel ${i + 1}`} />
+              </Slide>
+            ))}
+          </Track>
+          <Dots>
+            {images.map((_, i) => (
+              <Dot key={i} onClick={() => setIndex(i)} active={i === index} />
+            ))}
+          </Dots>
+      </CarouselWrapper>
+      <Arrow className="fa-solid fa-arrow-right"></Arrow>
+    </FlexWrap>
   );
 };
 
