@@ -5,8 +5,6 @@ background-color: #ffffff;
   color: black;
   padding: 1rem;
   width: 100%;
-  
-  /* Optional shadow for visual layering */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   &::after {
@@ -17,7 +15,6 @@ background-color: #ffffff;
     width: 0;
     height: 0;
 
-    /* Triangle pointing down-right */
     border-left: 0 solid transparent;
     border-right: 200px solid transparent;
     border-top: 30px solid white;
@@ -32,8 +29,8 @@ export const Lower = styled.div`
 `;
 export const LowerText = styled.div`
   padding: 3px;
-  margin-left: 50%;
-  color: white;
+  margin-left: 70%;
+  color:rgb(233, 217, 187);
   & p {
     padding: 0;
     margin: 0;

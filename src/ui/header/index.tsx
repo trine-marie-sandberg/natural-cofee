@@ -6,7 +6,7 @@ const Header = () =>
     <Wrapper>
       <LogoNavWrap>
         <div>
-          <Logo>Natural Cofee</Logo>
+          <Logo>Natural Coffee</Logo>
         </div>
         <nav>
           <NavList>
