@@ -26,11 +26,13 @@ export const Lower = styled.div`
   background-color: #140B0E;
   max-height: 30px;
   padding: 1px;
+  // If not LowerText
+  padding: 10px;
 `;
 export const LowerText = styled.div`
   padding: 3px;
   margin-left: 70%;
-  color:rgb(233, 217, 187);
+  color:rgba(255, 255, 255, 1);
   & p {
     padding: 0;
     margin: 0;

@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { Wrapper, Lower, LowerText, Logo, LogoNavWrap, NavList } from './style';
+import { Wrapper, Lower, Logo, LogoNavWrap, NavList } from './style';
 
 const Header = () => 
   <div>
@@ -21,9 +21,9 @@ const Header = () =>
       </LogoNavWrap>
   </Wrapper>
   <Lower>
-    <LowerText>
+    {/* <LowerText>
       <p><i className="fa-solid fa-location-dot"></i> Loren ipsumstreat 21, 1212 Dolor</p>
-    </LowerText>
+    </LowerText> */}
   </Lower>
 </div>;
 
