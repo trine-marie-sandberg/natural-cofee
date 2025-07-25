@@ -26,26 +26,41 @@ export const Section3 = styled.div`
 
 export const MenuImagesWrap = styled.div`
   background-color: #fff !important;
+  display: flex;
+  flex-wrap: wrap;
 `;
 export const MenuImage = styled.img`
-  //background-image: url("coffee.png");
-  height: 250px;
-  width: 250px;
-  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 `;
 export const ImgTextWrap = styled.div`
   position: relative;
-  width: fit-content;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
 `;
-export const ImgText = styled.div`
-  padding: 40% 0;
-  margin: 0;
+export const ImgText = styled.button`
+  border: 3px solid rgb(20, 11, 14);
   position: absolute;
-  font-size: 30px;
-  text-align: center;
-  color: #ffff;
-  background-color: #140b0e70;
+  top: 0;
+  left: 0;
+  margin: 0;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(20, 11, 14, 0.44); /* same as #140b0e70 */
+  transition: background-color 0.3s ease 0.2s;
   border-radius: 15px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(20, 11, 14, 0.06);
+  }
 `;
