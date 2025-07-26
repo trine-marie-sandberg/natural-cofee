@@ -32,26 +32,26 @@ function Menu() {
           <div>
             <h2>Drinks</h2>
             <MenuItemsWrap>
-            <div>
-              <h3>Cofee</h3>
-              <ResponsiveImage src="coffee.png" />
-              <ul>
-                <li>Expresso</li>
-                <li>Americano</li>
-                <li>Latte</li>
-                <li>Mocca</li>
-              </ul>
-            </div>
-            <div>
-              <h3>Other drinks</h3>
-              <ResponsiveImage src="juice.png" />
-              <ul>
-                <li>Expresso</li>
-                <li>Americano</li>
-                <li>Latte</li>
-                <li>Mocca</li>
-              </ul>
-            </div>
+              <div>
+                <h3>Cofee</h3>
+                <ResponsiveImage src="coffee.png" />
+                <ul>
+                  <li>Expresso</li>
+                  <li>Americano</li>
+                  <li>Latte</li>
+                  <li>Mocca</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Other drinks</h3>
+                <ResponsiveImage src="juice.png" />
+                <ul>
+                  <li>Expresso</li>
+                  <li>Americano</li>
+                  <li>Latte</li>
+                  <li>Mocca</li>
+                </ul>
+              </div>
             </MenuItemsWrap>
           </div>
         </SectionWrapper>
@@ -68,6 +68,42 @@ function Menu() {
                   <li>Pork and beef taco</li>
                   <li>Black been taco</li>
                   <li>Vegan</li>
+                </ul>
+              </div>
+            </MenuItemsWrap>
+          </div>
+        </SectionWrapper>
+        <SectionWrapper>
+          <div>
+            <h2>Desserts</h2>
+            <MenuItemsWrap>
+              <div>
+                <h3>Cake</h3>
+                <ResponsiveImage src="cake.png" />
+                <ul>
+                  <li>Chocolate cake</li>
+                  <li>Carrot cake</li>
+                </ul>
+              </div>
+            </MenuItemsWrap>
+          </div>
+        </SectionWrapper>
+        <SectionWrapper>
+          <div>
+            <h2>Deals</h2>
+            <MenuItemsWrap>
+              <div>
+                <h3>Breakfast</h3>
+                <ResponsiveImage src="breakfast.png" />
+                <ul>
+                  <li>Chocolate muffin, coffee and toast</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Wrap tuesday</h3>
+                <ResponsiveImage src="wrap.png" />
+                <ul>
+                  <li>All wraps $45 on tuesdays</li>
                 </ul>
               </div>
             </MenuItemsWrap>

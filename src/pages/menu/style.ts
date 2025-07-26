@@ -5,7 +5,7 @@ export const MenuContainer = styled.div`
   flex-direction: column;
   justify-content: center;
 
-    > :nth-child(2) {
+    > :nth-child(even) {
         background-color: #140B0E;
         color: #ffff;
     }
