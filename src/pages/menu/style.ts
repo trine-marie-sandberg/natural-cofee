@@ -16,6 +16,10 @@ export const SectionWrapper = styled.div`
 `;
 export const Section1 = styled.div`
   color: black;
+  
+  & h1 {
+    text-align: center;
+  }
 `;
 export const Section2 = styled.div`
   color: #ffff;
@@ -28,6 +32,7 @@ export const MenuImagesWrap = styled.div`
   background-color: #fff !important;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 `;
 export const MenuImage = styled.img`
   width: 100%;

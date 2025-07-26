@@ -17,6 +17,14 @@ function Menu() {
                 <ImgText>Food</ImgText>
                 <MenuImage src="wrap.png" />
               </ImgTextWrap>
+              <ImgTextWrap>
+                <ImgText>Dessert</ImgText>
+                <MenuImage src="cake.png" />
+              </ImgTextWrap>
+              <ImgTextWrap>
+                <ImgText>Deals</ImgText>
+                <MenuImage src="breakfast.png" />
+              </ImgTextWrap>
             </MenuImagesWrap>
           </Section1>
         </SectionWrapper>
