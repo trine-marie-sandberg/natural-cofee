@@ -1,4 +1,4 @@
-import { MenuContainer, Section1, Section2, SectionWrapper, Section3, MenuImagesWrap, MenuImage, ImgTextWrap, ImgText } from "./style";
+import { MenuContainer, SectionWrapper, MenuImagesWrap, MenuImage, ImgTextWrap, ImgText, ResponsiveImage, MenuItemsWrap, Heading } from "./style";
 
 
 function Menu() {
@@ -6,8 +6,8 @@ function Menu() {
   return (
     <MenuContainer>
         <SectionWrapper>
-          <Section1>
-            <h1><i className="fa-solid fa-utensils"></i> Menu</h1>
+          <div>
+            <Heading><i className="fa-solid fa-utensils"></i> Menu</Heading>
             <MenuImagesWrap>
               <ImgTextWrap>
                 <ImgText>Drinks</ImgText>
@@ -26,17 +26,52 @@ function Menu() {
                 <MenuImage src="breakfast.png" />
               </ImgTextWrap>
             </MenuImagesWrap>
-          </Section1>
+          </div>
         </SectionWrapper>
         <SectionWrapper>
-          <Section2>
+          <div>
             <h2>Drinks</h2>
-          </Section2>
+            <MenuItemsWrap>
+            <div>
+              <h3>Cofee</h3>
+              <ResponsiveImage src="coffee.png" />
+              <ul>
+                <li>Expresso</li>
+                <li>Americano</li>
+                <li>Latte</li>
+                <li>Mocca</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Other drinks</h3>
+              <ResponsiveImage src="juice.png" />
+              <ul>
+                <li>Expresso</li>
+                <li>Americano</li>
+                <li>Latte</li>
+                <li>Mocca</li>
+              </ul>
+            </div>
+            </MenuItemsWrap>
+          </div>
         </SectionWrapper>
         <SectionWrapper>
-          <Section3>
+          <div>
             <h2>Food</h2>
-          </Section3>
+            <MenuItemsWrap>
+              <div>
+                <h3>Wraps</h3>
+                <ResponsiveImage src="wrap.png" />
+                <ul>
+                  <li>Spicy chicken</li>
+                  <li>Pulled beef</li>
+                  <li>Pork and beef taco</li>
+                  <li>Black been taco</li>
+                  <li>Vegan</li>
+                </ul>
+              </div>
+            </MenuItemsWrap>
+          </div>
         </SectionWrapper>
     </MenuContainer>
   )
