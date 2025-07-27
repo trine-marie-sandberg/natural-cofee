@@ -1,11 +1,8 @@
-# React + TypeScript + Vite
+# Natural Coffee home page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Made with React + TypeScript + Vite.
+<img width="1903" height="907" alt="frontpage" src="https://github.com/user-attachments/assets/812b015e-57e5-405e-9d9d-8083a0fece4b" />
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 ## Expanding the ESLint configuration
 
