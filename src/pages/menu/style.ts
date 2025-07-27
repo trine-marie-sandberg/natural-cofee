@@ -33,7 +33,9 @@ export const MenuImage = styled.img`
   object-fit: cover;
   display: block;
 `;
-export const ImgTextWrap = styled.div`
+export const MenuBtn = styled.button`
+  border: none;
+  padding: 0;
   position: relative;
   width: 100%;
   max-width: 250px;
@@ -42,7 +44,7 @@ export const ImgTextWrap = styled.div`
   overflow: hidden;
   flex: 1 1 200px; /* responsive growth/shrink with min width */
 `;
-export const ImgText = styled.button`
+export const ImgText = styled.p`
   border: 1px solid rgb(20, 11, 14);
   position: absolute;
   top: 0;
