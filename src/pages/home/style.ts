@@ -21,8 +21,6 @@ export const PrimBtn = styled.a`
   border-left: 1px dashed rgb(233, 217, 187);
   border-right: 1px dashed rgb(233, 217, 187);
   border-radius: 10px;
-  width: fit-content;
-  height: fit-content;
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -67,12 +65,14 @@ export const PrimBtn = styled.a`
 `;
 
 export const HeadingWrap = styled.div`
+  margin: 2rem 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 `;
 export const TextWrap = styled.p`
-  max-width: 800px;
+  max-width: 600px;
 `;
 export const FlexWrap = styled.div`
   display: flex;

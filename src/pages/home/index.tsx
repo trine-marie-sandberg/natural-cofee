@@ -10,15 +10,13 @@ function Home() {
         <div>
           <FlexWrap>
           <h1>Natural Coffee Café <i className="fa-solid fa-mug-saucer"></i></h1>
-          <PrimBtn href="/menu"><i className="fa-solid fa-utensils"></i> Menu</PrimBtn>
           </FlexWrap>
           <TextWrap>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            We are an ethical and enviromental friendly cafe with focus on high quality raw materials.
+            Visit us in our new locales at ilumpstreet 17. Customer parking avaiable. 25% Student discount on black coffee. Open <i className="fa-solid fa-calendar"></i> mon-sunday <i className="fa-solid fa-clock"></i> 8-19
           </TextWrap>
         </div>
+        <PrimBtn href="/menu"><i className="fa-solid fa-utensils"></i> Menu</PrimBtn>
       </HeadingWrap>
         <Carousel />
     </HomeContainer>

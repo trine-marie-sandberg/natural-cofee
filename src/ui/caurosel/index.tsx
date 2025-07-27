@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { CarouselWrapper, Track, Slide, Dots, Dot, FlexWrap, Arrow } from './style';
+import { CarouselWrapper, Track, Slide, Dots, Dot, FlexWrap, Arrow, ArrowWrapper } from './style';
 
 const images = ['/carousel1.jpg', '/carousel2.jpg', '/carousel3.jpg'];
 
@@ -37,7 +37,10 @@ const Carousel = () => {
 
   return (
     <FlexWrap>
-      <Arrow className="fa-solid fa-arrow-left" onClick={goToPrev} />
+      
+      <ArrowWrapper>
+        <Arrow className="fa-solid fa-arrow-left" onClick={goToPrev} />
+      </ArrowWrapper>
       
       <CarouselWrapper>
         <Track currentIndex={index}>
@@ -54,7 +57,10 @@ const Carousel = () => {
         </Dots>
       </CarouselWrapper>
       
-      <Arrow className="fa-solid fa-arrow-right" onClick={goToNext} />
+      <ArrowWrapper>
+        <Arrow className="fa-solid fa-arrow-right" onClick={goToNext} />
+      </ArrowWrapper>
+      
     </FlexWrap>
   );
 };

@@ -49,18 +49,34 @@ export const FlexWrap = styled.div`
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  max-width: 60%;
+  max-width: fit-content;
   padding: 5px;
 `;
 
-export const Arrow = styled.i`
-cursor: pointer;
-  font-size: 20px;
-  color: rgb(0,0,0);
-  background-color: rgb(233, 217, 187);
-  border: 1px solid rgb(0, 0, 0);
-  padding: 15px;
+export const ArrowWrapper = styled.div`
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(10px, 2vw, 15px);
+  margin: 15px;
   border-radius: 100%;
-  margin: 5px;
+  border: 1px solid rgb(233, 217, 187);
+  border-right-style: dashed;
+  border-left-style: dashed;
+  transition: transform 0.6s ease, border 0.6s ease;
+
+  &:hover {
+    transform: rotate(360deg);
+  }
+`;
+export const Arrow = styled.i`
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  color: rgb(233, 217, 187);
+  transition: transform 0.6s ease;
+  
+  // Reverse rotation
+  ${ArrowWrapper}:hover & {
+    transform: rotate(-360deg);
+  }
 `;
