@@ -40,7 +40,7 @@ export const Dot = styled.button<{ active: boolean }>`
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  border: 1px solid #fff;
+  border: 1px solid rgb(233, 217, 187);
   background-color: ${({ active }) => (active ? '#140B0E' : 'rgb(233, 217, 187)')};
   cursor: pointer;
 `;
