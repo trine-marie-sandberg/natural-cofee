@@ -11,7 +11,7 @@ export const FrontImage = styled.div`
 export const HomeContainer = styled.div`
   color: white;
 `;
-export const PrimBtn = styled.button`
+export const PrimBtn = styled.a`
   background-color: rgb(36, 24, 24);
   color: rgba(255, 255, 255, 1);
   font-size: 20px;

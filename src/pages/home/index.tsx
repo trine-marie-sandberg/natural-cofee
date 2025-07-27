@@ -10,7 +10,7 @@ function Home() {
         <div>
           <FlexWrap>
           <h1>Natural Coffee Café <i className="fa-solid fa-mug-saucer"></i></h1>
-          <PrimBtn><i className="fa-solid fa-utensils"></i> Menu</PrimBtn>
+          <PrimBtn href="/menu"><i className="fa-solid fa-utensils"></i> Menu</PrimBtn>
           </FlexWrap>
           <TextWrap>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
